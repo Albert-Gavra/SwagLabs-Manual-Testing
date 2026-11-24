@@ -1,112 +1,83 @@
-\# QuestGuard – Week 1: Test Planning and Manual Test Execution
+# Week 2 – Bug Reports and Regression Tracking
 
+## Project Overview
 
+This project is part of the SkillMe QuestGuard Software Quality Virtual Internship – Week 2.
 
-This project is part of the \*\*SkillMe Software Quality Virtual Internship – QuestGuard Program (Week 1)\*\*.
+The objective of this activity is to document previously identified issues in the SauceDemo application, create structured bug reports, and perform regression testing to evaluate the application's existing functionality.
 
+**Application Under Test:** [SauceDemo](https://www.saucedemo.com/)
 
+**Testing Type:** Manual Testing, Bug Reporting, and Regression Testing
 
-The project focuses on creating a test plan and performing manual functional testing on \[SauceDemo](https://www.saucedemo.com/).
+**Testing Environment:**
+- Operating System: Windows 11
+- Browser: Google Chrome
 
+## Project Objectives
 
+- Convert previously identified issues into structured bug reports.
+- Assign severity and priority levels based on their impact and urgency.
+- Provide evidence for each reported bug.
+- Create minimal reproduction steps for the three highest-priority bugs.
+- Develop a regression checklist covering reported bugs and core application functionality.
+- Retest the application and document the results.
 
-\## Testing Scope
+## Bug Reports Summary
 
+A total of six bugs were documented during this activity.
 
+| Bug ID | Bug Title | Severity | Priority | Status |
+|---|---|---|---|---|
+| BUG-001 | Add to Cart Button Not Clickable | High | High | New |
+| BUG-002 | Remove Button Not Clickable | High | High | New |
+| BUG-003 | Sort Feature Does Not Update Product Order Correctly | Medium | Medium | New |
+| BUG-004 | Product Prices Displayed Incorrectly | High | High | New |
+| BUG-005 | Finish Button Not Clickable | Critical | High | New |
+| BUG-006 | Application Allows Checkout with an Empty Cart | High | High | New |
 
-The testing covers:
+## Minimal Reproduction Steps
 
-\- Login and authentication
+Minimal reproduction steps were prepared for the three highest-priority bugs:
 
-\- Product listing and sorting
+- BUG-005 – Finish Button Not Clickable
+- BUG-001 – Add to Cart Button Not Clickable
+- BUG-002 – Remove Button Not Clickable
 
-\- Shopping cart functionality
+These steps provide a concise way to reproduce the reported issues.
 
-\- Checkout process
+## Regression Testing
 
-\- Logout functionality
+A regression checklist containing 10 test scenarios was created to cover the core application flow and all six reported bugs.
 
-\- Edge cases and negative scenarios
+### Test Execution Summary
 
+| Result | Count |
+|---|---:|
+| Passed | 4 |
+| Failed | 6 |
+| Total | 10 |
 
+**Pass Rate: 40%**
 
-\## Test Environment
+All 10 test scenarios were executed again. The results remained unchanged, and all six previously reported bugs were still reproducible.
 
-\- \*\*Application:\*\* SauceDemo (Swag Labs)
+## Retesting Conclusion
 
-\- \*\*Operating System:\*\* Windows 11
+The retesting confirmed that the previously identified issues remain present in the current SauceDemo demo application.
 
-\- \*\*Browser:\*\* Google Chrome 158.0.8127.37
+No source code modifications or actual bug fixes were performed during this activity. Therefore, the results represent a retest of the existing application rather than verification of deployed fixes.
 
-\- \*\*Testing Type:\*\* Manual Functional Testing
+## Project Files
 
+| File / Folder | Description |
+|---|---|
+| `Bug-Tracker-and-Regression.xlsx` | Contains the Bug Tracker, Bug Report Details, Regression Checklist, and Minimal Reproduction Steps sheets. |
+| `Week-2_Regression-Testing-Summary.docx` | Documents the regression testing execution results and conclusion. |
+| `Evidence/` | Contains screenshots and video recordings supporting the reported bugs. |
 
+## Notes
 
-\## Test Execution Summary
+This project was conducted as a manual software testing exercise using the publicly accessible SauceDemo demo application.
 
-
-
-| Category | Total | Passed | Failed |
-
-|---|---:|---:|---:|
-
-| Happy Path | 5 | 5 | 0 |
-
-| Edge Cases | 7 | 6 | 1 |
-
-| Negative Cases | 5 | 5 | 0 |
-
-| \*\*Total\*\* | \*\*17\*\* | \*\*16\*\* | \*\*1\*\* |
-
-
-
-\*\*Pass Rate:\*\* 94.12%
-
-
-
-\## Key Finding
-
-
-
-One issue was identified during testing: the application allowed checkout to be completed even when the shopping cart was empty (TC017).
-
-
-
-\## Project Documents
-
-
-
-1\. `01\_Test-Plan.docx` – Testing objectives, scope, environment, and approach.
-
-2\. `02\_Test-Cases-and-Execution.xlsx` – Test cases, execution steps, expected results, actual results, and statuses.
-
-3\. `03\_Test-Summary-and-Risk-Assessment.docx` – Overall execution summary, findings, and risk assessment.
-
-
-
-\## Skills Practiced
-
-\- Test Planning
-
-\- Manual Functional Testing
-
-\- Test Case Design
-
-\- Happy Path, Edge Case, and Negative Testing
-
-\- Test Execution and Result Documentation
-
-\- Basic Risk Assessment
-
-
-
-\---
-
-
-
-\*\*Project:\*\* QuestGuard – Week 1  
-
-\*\*Program:\*\* SkillMe Software Quality Virtual Internship  
-
-\*\*Tester:\*\* Albert Gavra Septiawan
-
+All reported issues are documented based on the observed application behavior during testing.
