@@ -64,8 +64,8 @@ The project contains 10 automated test executions covering the following scenari
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
-cd SkillMe-Week-3
+git clone https://github.com/Albert-Gavra/SwagLabs-Manual-Testing.git
+cd SwagLabs-Manual-Testing/SkillMe-Week-3
 ```
 
 ### 2. Create a Virtual Environment
